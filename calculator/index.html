@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./main.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="row">
-      <input type="text" class="input" disabled />
+      <input type="text" class="input" disabled id="top-input" />
     </div>
     <div class="row">
-      <button class="btn">7</button>
-      <button class="btn">8</button>
-      <button class="btn">9</button>
-      <button class="btn">=</button>
+      <button class="btn" onclick="inputNum(7)">7</button>
+      <button class="btn" onclick="inputNum(8)">8</button>
+      <button class="btn" onclick="inputNum(9)">9</button>
+      <button class="btn" onclick="inputEqual()">=</button>
     </div>
     <div class="row">
-      <button class="btn">4</button>
-      <button class="btn">5</button>
-      <button class="btn">6</button>
-      <button class="btn">+</button>
+      <button class="btn" onclick="inputNum(4)">4</button>
+      <button class="btn" onclick="inputNum(5)">5</button>
+      <button class="btn" onclick="inputNum(6)">6</button>
+      <button class="btn" onclick="inputOperator('+')">+</button>
     </div>
     <div class="row">
-      <button class="btn">1</button>
-      <button class="btn">2</button>
-      <button class="btn">3</button>
-      <button class="btn">-</button>
+      <button class="btn" onclick="inputNum(1)">1</button>
+      <button class="btn" onclick="inputNum(2)">2</button>
+      <button class="btn" onclick="inputNum(3)">3</button>
+      <button class="btn" onclick="inputOperator('-')">-</button>
     </div>
     <div class="row">
-      <button class="btn btn-lg">0</button>
-      <button class="btn">/</button>
-      <button class="btn">*</button>
+      <button class="btn btn-lg" onclick="inputNum(0)">0</button>
+      <button class="btn" onclick="inputOperator('/')">/</button>
+      <button class="btn" onclick="inputOperator('*')">*</button>
     </div>
   </body>
 </html>
